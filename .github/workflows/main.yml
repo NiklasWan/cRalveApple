@@ -1,0 +1,16 @@
+name: CI
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  SwiftLint:
+    runs-on: macOS-Latest
+
+    steps:
+      - name: Checking Out Code
+        uses: actions/checkout@v3
+      
+      - name: Linting
+        uses: norio-nomura/action-swiftlint@3.2.1
