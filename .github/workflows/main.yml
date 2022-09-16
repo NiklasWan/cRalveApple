@@ -12,5 +12,5 @@ jobs:
       - name: Checking Out Code
         uses: actions/checkout@v3
       
-      - name: Linting
-        uses: norio-nomura/action-swiftlint@3.2.1
+      - name: Check For Swiftlint
+        run: swiftlint help
